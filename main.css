@@ -1,0 +1,171 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: #343D76;
+}
+
+/*Centrado en body y .spider*/
+/*Centered on body and .spider*/
+body, .spider {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*Estilos div Spider*/
+/*Div Styles Spider*/
+.spider {
+  margin-top: 2em;
+  width: 480px;
+  height: 650px;
+}
+
+/*Color de la araña*/
+/*Color of the spider*/
+.style {
+  background: #BD0100;
+}
+
+/*Barriga de la araña*/
+/*Spider belly*/
+.belly {
+  height: 57%;
+  width: 60%;
+  border-radius: 50%;
+  position: relative;
+}
+
+/*Contenedor patas izquierda*/
+/*Legs container left*/
+.left-paws {
+  position: absolute;
+  left: 3%;
+  -webkit-transform: translateX(-70%);
+  -ms-transform: translateX(-70%);
+  transform: translateX(-70%);
+  height: 57%;
+}
+
+/*Estilos Generales de las patas izquierdas*/
+/*General Styles of Left Legs*/
+.paw-left {
+  width: 110px;
+  height: 50px;
+  position: relative;
+}
+
+.paw-left:before {
+  content: "";
+  background: #BD0100;
+  width: 50px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*Estilos de cada pata izquierda individual*/
+/*Styles of each individual left paw*/
+.top-left {
+  top: 10%;
+  right: 0;
+  -webkit-transform: rotate(20deg) translateX(5%);
+  -ms-transform: rotate(20deg) translateX(5%);
+  transform: rotate(20deg) translateX(5%);
+}
+
+.center1-left {
+  top: 37%;
+  -webkit-transform: rotate(10deg) translateX(-18%);
+  -ms-transform: rotate(10deg) translateX(-18%);
+  transform: rotate(10deg) translateX(-18%);
+}
+
+.center2-left {
+  top: 62%;
+  -webkit-transform: translateX(-18%);
+  -ms-transform: translateX(-18%);
+  transform: translateX(-18%);
+}
+
+.bottom-left {
+  top: 85%;
+  right: -11%;
+  -webkit-transform: rotate(-20deg) translateX(20%);
+  -ms-transform: rotate(-20deg) translateX(20%);
+  transform: rotate(-20deg) translateX(20%);
+}
+
+/*Contenedor patas derecha*/
+/*Right leg container*/
+.right-paws {
+  position: absolute;
+  right: 0%;
+  -webkit-transform: translateX(70%);
+  -ms-transform: translateX(70%);
+  transform: translateX(70%);
+  height: 57%;
+}
+
+/*Estilos Generales de las patas derechas*/
+/*General styles of right legs*/
+.paw-right {
+  width: 110px;
+  height: 50px;
+  position: relative;
+}
+
+.paw-right:after {
+  content: "";
+  background: #BD0100;
+  width: 50px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/*Estilos de cada pata derecha individual*/
+/*Styles of each individual right foot*/
+.top-right {
+  top: 10%;
+  right: 0;
+  -webkit-transform: rotate(-20deg) translateX(-11%);
+  -ms-transform: rotate(-20deg) translateX(-11%);
+  transform: rotate(-20deg) translateX(-11%);
+}
+
+.center1-right {
+  top: 37%;
+  -webkit-transform: rotate(-10deg) translateX(18%);
+  -ms-transform: rotate(-10deg) translateX(18%);
+  transform: rotate(-10deg) translateX(18%);
+}
+
+.center2-right {
+  top: 62%;
+  -webkit-transform: translateX(10%);
+  -ms-transform: translateX(10%);
+  transform: translateX(10%);
+}
+
+.bottom-right {
+  top: 85%;
+  right: -11%;
+  -webkit-transform: rotate(20deg) translateX(-41%);
+  -ms-transform: rotate(20deg) translateX(-41%);
+  transform: rotate(20deg) translateX(-41%);
+}
